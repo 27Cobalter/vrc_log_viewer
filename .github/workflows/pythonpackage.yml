@@ -23,7 +23,7 @@ jobs:
     - name: Build as binary
       run: |
         python -m pip install PyInstaller
-        pyinstaller.exe vrc_joined_bell.py -F
+        pyinstaller.exe vrc_log_viewer.py -F
     - name: Achive to zip
       run: |
         powershell compress-archive -Path dist/vrc_joined_bell.exe,notice.yml -DestinationPath dist/vrc_joined_bell.zip
