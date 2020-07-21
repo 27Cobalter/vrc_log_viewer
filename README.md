@@ -2,6 +2,9 @@
 ## これは何
 - VRCのログを見たいときに使うやつ
 
+## バイナリ
+- https://github.com/27Cobalter/vrc_log_viewer/releases
+
 ## 依存パッケージ
 - pyyaml
 ```
