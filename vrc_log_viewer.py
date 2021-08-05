@@ -2,6 +2,7 @@ import time
 import glob
 import os
 import re
+import sys
 import yaml
 
 
@@ -29,6 +30,8 @@ if __name__ == "__main__":
 
     vrcdir = os.environ["USERPROFILE"] + "\\AppData\\LocalLow\\VRChat\\VRChat\\"
     logfile = vrcdir + conf["logfile"]
+    if len(sys.argv) > 1:
+        logfile = sys.argv[1]
     if logfile == vrcdir:
         logfiles = glob.glob(vrcdir + "output_log_*.txt")
         logfiles.sort(key=os.path.getctime, reverse=True)
