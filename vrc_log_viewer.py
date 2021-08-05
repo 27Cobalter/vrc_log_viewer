@@ -15,7 +15,7 @@ def tail(thefile, past):
             continue
         line = line.rstrip("\n").rstrip("\r")
         if line != "":
-            yield line
+            yield repr(line)[1:-1]
 
 
 if __name__ == "__main__":
