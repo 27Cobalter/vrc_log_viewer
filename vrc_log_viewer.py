@@ -1,8 +1,8 @@
-import time
 import glob
 import os
 import re
 import sys
+import time
 import yaml
 
 
